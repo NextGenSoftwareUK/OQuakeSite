@@ -48,19 +48,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .nav-logo{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:.2em;color:var(--amber);display:flex;align-items:center;gap:10px}
 .nav-logo-icon{width:30px;height:30px;flex-shrink:0}
 .nav-links{display:flex;align-items:center;gap:26px;list-style:none}
-.nav-links a{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--text-dim);transition:color .2s,filter .2s}
+.nav-links a{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.12em;color:#a8bfd8;transition:color .2s,filter .2s}
 .nav-links a:hover{color:var(--amber);filter:drop-shadow(0 0 6px rgba(255,136,0,.6))}
 .nav-cta{font-family:'Orbitron',sans-serif!important;font-size:11px!important;font-weight:700!important;letter-spacing:.12em!important;color:#0a0500!important;background:var(--amber);padding:9px 18px;border-radius:6px;transition:box-shadow .2s,transform .2s}
 .nav-cta:hover{box-shadow:0 0 24px rgba(255,136,0,.55);transform:translateY(-1px);filter:none!important;color:#0a0500!important}
 
 /* ── HERO ── */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(255,136,0,.07) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 80% 80%,rgba(255,136,0,.04) 0%,transparent 60%)}
-.hero-svg-arena{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.hero-svg-arena{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.85}
 .hero-content{position:relative;z-index:1}
 .hero-kicker{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.35em;color:var(--amber);margin-bottom:20px;animation:fadeUp .7s ease both}
 .hero-title{font-family:'Orbitron',sans-serif;font-size:clamp(38px,8vw,96px);font-weight:900;letter-spacing:.08em;line-height:1.05;color:#fff;margin-bottom:12px;animation:fadeUp .7s .08s ease both,heroGlow 3s ease-in-out infinite}
 .hero-title span{background:linear-gradient(135deg,var(--amber),#ffb347,var(--amber));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{font-size:clamp(16px,2.2vw,20px);color:var(--text-dim);max-width:700px;line-height:1.75;margin:0 auto 36px;animation:fadeUp .7s .16s ease both}
+.hero-sub{font-size:clamp(16px,2.2vw,20px);color:#a8bfd8;max-width:700px;line-height:1.75;margin:0 auto 36px;animation:fadeUp .7s .16s ease both}
 .hero-sub strong{color:var(--text)}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;animation:fadeUp .7s .24s ease both;margin-bottom:48px}
 .btn-amber{font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:.14em;padding:14px 28px;background:linear-gradient(135deg,var(--amber-dim),var(--amber));color:#070300;border-radius:8px;transition:box-shadow .25s,transform .2s;display:inline-block}
@@ -70,7 +70,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .btn-cyan-outline{font-family:'Orbitron',sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;padding:14px 28px;border:1px solid rgba(0,229,255,.35);color:var(--cyan);border-radius:8px;background:rgba(0,229,255,.04);transition:background .2s,border-color .2s,transform .2s;display:inline-block}
 .btn-cyan-outline:hover{background:rgba(0,229,255,.1);border-color:rgba(0,229,255,.6);transform:translateY(-2px)}
 .hero-badges{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;animation:fadeUp .7s .32s ease both}
-.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,136,0,.05);border:1px solid rgba(255,136,0,.18);border-radius:24px;padding:7px 16px;font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-dim);letter-spacing:.08em}
+.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,136,0,.05);border:1px solid rgba(255,136,0,.18);border-radius:24px;padding:7px 16px;font-family:'Share Tech Mono',monospace;font-size:10px;color:#a8bfd8;letter-spacing:.08em}
 .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 6px rgba(255,136,0,.7);flex-shrink:0}
 
 /* ── SCROLL REVEAL ── */
@@ -83,13 +83,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .section-kicker{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.28em;color:var(--amber);text-align:center;margin-bottom:10px}
 .section-title{font-family:'Orbitron',sans-serif;font-size:clamp(22px,4vw,36px);font-weight:700;letter-spacing:.1em;text-align:center;color:#fff;margin-bottom:12px}
 .section-line{display:block;width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent);margin:0 auto 48px}
-.section-sub{font-size:16px;color:var(--text-dim);text-align:center;max-width:680px;margin:0 auto 48px;line-height:1.75}
+.section-sub{font-size:16px;color:#a8bfd8;text-align:center;max-width:680px;margin:0 auto 48px;line-height:1.75}
 .section-sub strong{color:var(--text)}
 
 /* ── ABOUT ── */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 @media(max-width:820px){.about-grid{grid-template-columns:1fr}}
-.about-text p{font-size:16px;color:var(--text-dim);line-height:1.8;margin-bottom:16px}
+.about-text p{font-size:16px;color:#a8bfd8;line-height:1.8;margin-bottom:16px}
 .about-text p strong{color:var(--text)}
 .about-text p a{color:var(--amber);border-bottom:1px solid rgba(255,136,0,.3);transition:color .2s,border-color .2s}
 .about-text p a:hover{color:#ffb347;border-color:rgba(255,136,0,.7)}
@@ -102,7 +102,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .hud-card-title::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px rgba(255,136,0,.8);animation:pulseGlow 1.5s ease-in-out infinite}
 .hud-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,136,0,.08)}
 .hud-row:last-child{border-bottom:none}
-.hud-label{font-size:10px;letter-spacing:.12em;color:var(--text-dim)}
+.hud-label{font-size:.72rem;letter-spacing:.12em;color:#a8bfd8}
 .hud-val{font-size:13px;color:var(--amber);letter-spacing:.08em}
 .hud-val.cyan{color:var(--cyan)}
 .hud-val.gold{color:var(--gold)}
@@ -117,7 +117,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .feat-icon{font-size:34px;margin-bottom:14px;display:block}
 .feat-title{font-family:'Orbitron',sans-serif;font-size:12px;letter-spacing:.1em;color:var(--amber);margin-bottom:10px}
 .feat-card.coming-soon .feat-title{color:var(--cyan)}
-.feat-desc{font-size:14px;color:var(--text-dim);line-height:1.65}
+.feat-desc{font-size:14px;color:#a8bfd8;line-height:1.65}
 .feat-desc a{color:var(--amber);border-bottom:1px solid rgba(255,136,0,.25);transition:color .2s}
 .feat-desc a:hover{color:#ffb347}
 .feat-card.coming-soon .feat-desc a{color:var(--cyan)}
@@ -137,8 +137,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .rw-card.amber .rw-card-title{color:var(--amber)}
 .rw-card.orange .rw-card-title{color:#ff6400}
 .rw-card.cyan .rw-card-title{color:var(--cyan)}
-.rw-card p{font-size:14px;color:var(--text-dim);line-height:1.65}
-.rw-card.cyan p{color:var(--text-dim)}
+.rw-card p{font-size:14px;color:#a8bfd8;line-height:1.65}
+.rw-card.cyan p{color:#a8bfd8}
 .soon-badge{display:inline-block;margin-top:12px;font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:.18em;padding:4px 10px;border:1px solid rgba(0,229,255,.4);border-radius:999px;color:var(--cyan)}
 .how-strip{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:36px 28px}
 .how-title{font-family:'Orbitron',sans-serif;font-size:13px;letter-spacing:.18em;color:var(--amber);text-align:center;margin-bottom:28px}
@@ -146,14 +146,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .how-step{flex:1;min-width:140px;text-align:center;padding:0 12px;position:relative}
 .how-step:not(:last-child)::after{content:'→';position:absolute;right:-10px;top:18px;color:rgba(255,136,0,.4);font-size:18px}
 .how-num{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,136,0,.4);display:flex;align-items:center;justify-content:center;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:var(--amber);margin:0 auto 10px}
-.how-text{font-size:12px;color:var(--text-dim);line-height:1.5;letter-spacing:.03em}
+.how-text{font-size:12px;color:#a8bfd8;line-height:1.5;letter-spacing:.03em}
 
 /* ── OGENGINE BAND ── */
 .ogengine-band{background:linear-gradient(135deg,rgba(10,20,40,.9),rgba(5,14,30,.9));border-top:1px solid rgba(240,165,0,.15);border-bottom:1px solid rgba(240,165,0,.15);padding:64px 20px}
 .oge-inner{max-width:1000px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px}
 .oge-logo{font-family:'Orbitron',sans-serif;font-size:clamp(24px,4vw,38px);font-weight:900;letter-spacing:.2em;color:var(--gold);filter:drop-shadow(0 0 16px rgba(240,165,0,.5))}
 .oge-logo span{color:rgba(255,255,255,.25)}
-.oge-desc{font-size:15px;color:var(--text-dim);max-width:660px;line-height:1.75}
+.oge-desc{font-size:15px;color:#a8bfd8;max-width:660px;line-height:1.75}
 .oge-desc a{color:var(--gold);border-bottom:1px solid rgba(240,165,0,.3);transition:color .2s}
 .oge-desc a:hover{color:#ffd166}
 .oge-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:6px}
@@ -167,44 +167,44 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .rm-tile:hover{transform:translateY(-4px);box-shadow:0 10px 36px rgba(255,136,0,.09)}
 .rm-tile.future{border-style:dashed;border-color:rgba(255,136,0,.15)}
 .rm-tile.future:hover{box-shadow:0 10px 36px rgba(255,136,0,.04)}
-.rm-phase{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.2em;color:var(--text-dim);margin-bottom:8px}
+.rm-phase{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.2em;color:#a8bfd8;margin-bottom:8px}
 .rm-title{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--amber);margin-bottom:12px}
-.rm-tile.future .rm-title{color:var(--text-dim)}
-.rm-desc{font-size:13px;color:var(--text-dim);line-height:1.6}
-.rm-status{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.12em}
+.rm-tile.future .rm-title{color:#a8bfd8}
+.rm-desc{font-size:13px;color:#a8bfd8;line-height:1.6}
+.rm-status{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.12em}
 .rm-status.inprogress{color:var(--amber)}
 .rm-status.inprogress::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px rgba(255,136,0,.8);animation:pulseGlow 1.5s ease-in-out infinite}
 .rm-status.soon{color:var(--cyan)}
 .rm-status.soon::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--cyan);opacity:.7}
-.rm-status.future-badge{color:var(--text-dim)}
+.rm-status.future-badge{color:#a8bfd8}
 .rm-status.future-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--text-dim);opacity:.4}
 
 /* ── CTA BAND ── */
 .cta-band{padding:80px 20px;text-align:center}
 .cta-box{max-width:760px;margin:0 auto;background:linear-gradient(135deg,rgba(255,136,0,.06),rgba(255,136,0,.02));border:1px solid rgba(255,136,0,.22);border-radius:20px;padding:56px 40px}
 .cta-box h2{font-family:'Orbitron',sans-serif;font-size:clamp(22px,4vw,36px);font-weight:700;letter-spacing:.1em;color:#fff;margin-bottom:14px}
-.cta-box p{font-size:16px;color:var(--text-dim);line-height:1.75;margin-bottom:30px;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-box p{font-size:16px;color:#a8bfd8;line-height:1.75;margin-bottom:30px;max-width:520px;margin-left:auto;margin-right:auto}
 .cta-btns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
 
 /* ── FOOTER ── */
 footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60px 20px 32px}
-.foot-inner{max-width:1120px;margin:0 auto}
-.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.foot-inner{max-width:1400px;margin:0 auto;padding:0 1rem}
+.foot-brand{margin-bottom:3.5rem}.foot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin-bottom:48px}
 @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.foot-grid{grid-template-columns:1fr}}
 .foot-brand-name{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;letter-spacing:.2em;color:var(--amber);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.foot-brand-desc{font-size:13px;color:var(--text-dim);line-height:1.7;margin-bottom:18px;max-width:260px}
+.foot-brand-desc{font-size:13px;color:#a8bfd8;line-height:1.7;margin-bottom:18px;max-width:260px}
 .foot-socials{display:flex;gap:10px;flex-wrap:wrap}
-.social-btn{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.1em;padding:6px 12px;border:1px solid rgba(255,136,0,.2);border-radius:6px;color:var(--text-dim);transition:color .2s,border-color .2s}
+.social-btn{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.1em;padding:6px 12px;border:1px solid rgba(255,136,0,.2);border-radius:6px;color:#a8bfd8;transition:color .2s,border-color .2s}
 .social-btn:hover{color:var(--amber);border-color:rgba(255,136,0,.5)}
 .foot-col-title{font-family:'Orbitron',sans-serif;font-size:10px;letter-spacing:.2em;color:var(--amber);margin-bottom:16px}
-.foot-links{list-style:none;display:flex;flex-direction:column;gap:9px}
-.foot-links a{font-size:13px;color:var(--text-dim);transition:color .2s}
-.foot-links a:hover{color:var(--amber)}
+.foot-links{list-style:none;display:flex;flex-direction:column;gap:5px}
+.foot-links a{font-size:13px;color:#a8bfd8;transition:color .2s}
+footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(255,136,0,.8)) drop-shadow(0 0 40px rgba(255,136,0,.4))}
 .foot-bottom{border-top:1px solid rgba(255,136,0,.08);padding-top:24px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.foot-copy{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-dim);letter-spacing:.08em}
+.foot-copy{font-family:'Share Tech Mono',monospace;font-size:10px;color:#a8bfd8;letter-spacing:.08em}.foot-copy a{color:#a8bfd8;text-decoration:none}
 .foot-sub-links{display:flex;gap:18px}
-.foot-sub-links a{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-dim);letter-spacing:.08em;transition:color .2s}
+.foot-sub-links a{font-family:'Share Tech Mono',monospace;font-size:10px;color:#a8bfd8;letter-spacing:.08em;transition:color .2s}
 .foot-sub-links a:hover{color:var(--amber)}
 
 @media(max-width:700px){
@@ -218,6 +218,83 @@ footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60
   .cta-box{padding:40px 22px}
   .foot-grid{grid-template-columns:1fr}
 }
+a:hover{filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(255,136,0,.8)) drop-shadow(0 0 40px rgba(255,136,0,.4))}
+/* ── SHAREWARE BADGE ── */
+.shareware-badge-q{display:inline-flex;align-items:center;gap:.5rem;font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.18em;color:#00cc88;border:1px solid rgba(0,204,136,.4);background:rgba(0,204,136,.08);padding:.3rem .9rem;border-radius:3px;margin-bottom:1.2rem}
+.shareware-badge-q::before{content:'▶';font-size:.6rem}
+/* ── BECOME ── */
+#become-q{padding:6rem 0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,204,136,.04),rgba(255,136,0,.03),rgba(0,0,0,0))}
+.become-intro-q{max-width:820px;margin:0 auto 3.5rem;text-align:center;color:#a8bfd8;font-size:1.05rem;line-height:1.8}
+.become-intro-q strong{color:#00cc88}
+.become-grid-q{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2.5rem}
+@media(max-width:760px){.become-grid-q{grid-template-columns:1fr}}
+.bcard-q{background:rgba(255,255,255,.025);border-radius:10px;padding:2rem;position:relative;overflow:hidden}
+.bcard-q.green{border:1px solid rgba(0,204,136,.25)}.bcard-q.green::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#00cc88,transparent)}
+.bcard-q.amber{border:1px solid rgba(255,136,0,.25)}.bcard-q.amber::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--amber),transparent)}
+.bcard-q.full{border:1px solid rgba(0,229,255,.2);grid-column:1/-1}.bcard-q.full::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#00e5ff,transparent)}
+.bcard-icon-q{font-size:2rem;margin-bottom:1rem;display:block}
+.bcard-title-q{font-family:'Orbitron',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.9rem}
+.bcard-q.green .bcard-title-q{color:#00cc88}
+.bcard-q.amber .bcard-title-q{color:var(--amber)}
+.bcard-q.full .bcard-title-q{color:#00e5ff}
+.bcard-body-q{color:#ffffff;font-size:.93rem;line-height:1.7}
+.karma-actions-q{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.karma-pill-q{font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:.12em;padding:.28rem .75rem;border-radius:3px;background:rgba(0,204,136,.12);border:1px solid rgba(0,204,136,.3);color:#00cc88}
+.stat-boosts-q{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.7rem;margin-top:1rem}
+.stat-boost-q{background:rgba(255,136,0,.08);border:1px solid rgba(255,136,0,.2);border-radius:6px;padding:.6rem .9rem;text-align:center}
+.stat-boost-label-q{font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.15em;color:var(--amber);display:block;margin-bottom:.2rem}
+.stat-boost-val-q{font-family:'Orbitron',sans-serif;font-size:.78rem;font-weight:700;color:#ffffff}
+.hotkeys-q{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:.75rem;margin-top:1rem}
+.hotkey-q{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:.7rem;text-align:center}
+.hotkey-key-q{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:900;color:#ffffff;display:block;margin-bottom:.3rem}
+.hotkey-label-q{font-family:'Share Tech Mono',monospace;font-size:.62rem;letter-spacing:.12em;color:#a8bfd8}
+.config-grid-q{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.6rem;margin-top:1rem}
+.config-row-q{font-family:'Share Tech Mono',monospace;font-size:.7rem;background:rgba(0,0,0,.3);border-radius:4px;padding:.45rem .7rem;display:flex;justify-content:space-between;gap:.5rem;white-space:nowrap}
+.config-key-q{color:#00e5ff}
+.config-val-q{color:#00cc88}
+/* ── EPIC QUEST ── */
+#epic-quest-q{padding:6rem 0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(255,136,0,.04),rgba(255,51,85,.03),rgba(0,229,255,.03),rgba(0,0,0,0))}
+.quest-intro-q{max-width:820px;margin:0 auto 3.5rem;text-align:center;color:#a8bfd8;font-size:1.05rem;line-height:1.75}
+.rift-banner-q{font-family:'Share Tech Mono',monospace;font-size:.78rem;letter-spacing:.22em;color:rgba(255,136,0,.7);text-align:center;margin-bottom:1.2rem;text-transform:uppercase}
+.quest-chapters-q{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.2rem;margin-bottom:3rem}
+.chapter-tile-q{background:rgba(255,255,255,.025);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1.4rem 1.6rem;position:relative;overflow:hidden}
+.chapter-tile-q::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.chapter-tile-q.ch-1::before,.chapter-tile-q.ch-2::before{background:linear-gradient(90deg,transparent,#ff8800,#ffaa00,#00e5ff,transparent)}
+.chapter-tile-q.ch-more::before{background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent)}
+.chapter-num-q{font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:.2em;margin-bottom:.5rem;color:rgba(255,255,255,.45)}
+.ch-more .chapter-num-q{color:rgba(255,255,255,.25)}
+.chapter-flow-q{font-family:'Share Tech Mono',monospace;font-size:.68rem;letter-spacing:.1em;margin-bottom:.75rem;line-height:1.6}
+.chapter-title-q{font-family:'Orbitron',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.06em;color:#e8f4ff;margin-bottom:.6rem}
+.chapter-desc-q{font-size:.85rem;color:#ffffff;line-height:1.55}
+.quest-tagline-q{text-align:center;font-family:'Share Tech Mono',monospace;font-size:.82rem;letter-spacing:.18em;color:rgba(255,255,255,.7);padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.05)}
+.shareware-note-q{text-align:center;margin-bottom:3rem}
+.shareware-note-q p{color:#a8bfd8;font-size:1rem;line-height:1.75;max-width:720px;margin:0 auto 1.2rem}
+.shareware-note-q strong{color:#00cc88}
+/* ── AI COMBAT ── */
+#ai-q{padding:6rem 0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(120,60,255,.05),rgba(0,229,255,.03),rgba(0,0,0,0))}
+.ai-intro-q{max-width:820px;margin:0 auto 3.5rem;text-align:center;color:#a8bfd8;font-size:1.05rem;line-height:1.75}
+.ai-agents-q{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin:2rem 0 3rem}
+.ai-agent-pill-q{font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.15em;padding:.3rem .85rem;border-radius:3px;border:1px solid rgba(180,120,255,.35);background:rgba(120,60,255,.1);color:#c4a0ff}
+.ai-modes-q{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.4rem;margin-bottom:2.5rem}
+.ai-tile-q{background:rgba(255,255,255,.025);border:1px solid rgba(120,60,255,.2);border-radius:10px;padding:1.6rem;position:relative;overflow:hidden;transition:border-color .25s,box-shadow .25s,transform .25s;will-change:transform}
+.ai-tile-q:hover{border-color:rgba(180,120,255,.5);box-shadow:0 8px 32px rgba(120,60,255,.18);transform:translateY(-4px)}
+.ai-tile-q::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(180,120,255,.6),transparent)}
+.ai-tile-icon-q{font-size:1.8rem;margin-bottom:1rem;display:block}
+.ai-tile-title-q{font-family:'Orbitron',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.08em;color:#c4a0ff;text-transform:uppercase;margin-bottom:.6rem}
+.ai-tile-desc-q{font-size:.92rem;color:#ffffff;line-height:1.6}
+.ai-tagline-q{text-align:center;font-family:'Share Tech Mono',monospace;font-size:.82rem;letter-spacing:.18em;color:rgba(200,160,255,.85);padding-top:1.5rem;border-top:1px solid rgba(120,60,255,.15)}
+/* ── VIDEO ── */
+.vid-section{padding:5rem 0;background:linear-gradient(180deg,transparent,rgba(255,136,0,.018),transparent)}
+.vid-section .inner{max-width:1100px;margin:0 auto;padding:0 2rem}
+.vid-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:2rem;margin-top:2.5rem}
+.vid-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,136,0,.22);border-radius:10px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.vid-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,136,0,.12)}
+.vid-frame{position:relative;padding-bottom:56.25%;height:0;overflow:hidden}
+.vid-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.vid-info{padding:18px 20px}
+.vid-kicker-oquake{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.2em;color:var(--amber);margin-bottom:6px}
+.vid-title-oquake{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;color:#e8f4ff;margin-bottom:8px}
+.vid-text{font-size:.88rem;color:#a8bfd8;line-height:1.55}
 </style>
 </head>
 <body>
@@ -246,7 +323,7 @@ footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60
 <!-- ══════════════════════ HERO ══════════════════════ -->
 <section class="hero">
   <!-- Arena SVG animation -->
-  <svg class="hero-svg-arena" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <svg class="hero-svg-arena" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stop-color="#ff8800" stop-opacity=".7"/>
@@ -296,11 +373,12 @@ footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60
   </svg>
 
   <div class="hero-content">
+    <div class="shareware-badge-q">CHAPTER I · SHAREWARE · FREE TO DOWNLOAD &amp; SHARE</div>
     <p class="hero-kicker">OASIS-POWERED ARENA SHOOTER</p>
     <h1 class="hero-title">Move Fast.<br><span>Fight Everywhere.</span></h1>
     <p class="hero-sub">Lightning-fast arena combat built on <strong>vkQuake + Vulkan</strong>, fully integrated with the <strong>OASIS Omniverse</strong>. Real-world GPS locations in parks hide weapons, armour and powerups — collect them physically, use them in-game. <strong>AR arena combat</strong> in real parks coming soon.</p>
     <div class="hero-btns">
-      <a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-API-CLIENT-v1.0.0" target="_blank" class="btn-amber">DOWNLOAD OQUAKE</a>
+      <a href="https://github.com/NextGenSoftwareUK/OQUAKE/releases/tag/OQUAKE_v1.0.0_ALPHA" target="_blank" class="btn-amber">DOWNLOAD OQUAKE</a>
       <a href="#features" class="btn-outline">EXPLORE FEATURES</a>
       <a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank" class="btn-cyan-outline">VIEW ON GITHUB</a>
     </div>
@@ -426,7 +504,234 @@ footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60
         <p class="feat-desc">Take the fight outside. Augmented reality arena overlays drop OQUAKE combat directly into real parks — the ultimate fusion of digital and physical competition.</p>
         <span class="feat-pill">COMING SOON</span>
       </div>
+      <div class="feat-card reveal">
+        <span class="feat-icon">🎯</span>
+        <div class="feat-title">GEOHOTSPOT TRIGGERS</div>
+        <p class="feat-desc">Embed GeoHotSpot triggers anywhere in maps — inside quests, as objectives, or standalone. Fire audio clips, video playback, text overlays, scripting events and NPC spawns at real-world GPS coordinates or specific in-game locations.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-icon">📦</span>
+        <div class="feat-title">STACK EVERYTHING</div>
+        <p class="feat-desc">Pick up every item in every map — weapons, armour, health, powerups — even beyond max capacity. Bank them and choose when to deploy. Finally clear that map you could never beat by stockpiling quad damage and mega-health across multiple sessions beforehand. For modders: design brutal new maps around stacking — a whole new cross-game modding genre only possible in the Omniverse. Quake becomes an FPS/RPG hybrid with strategic depth it never had before.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-icon">📤</span>
+        <div class="feat-title">SEND TO AVATAR / SEND TO CLAN</div>
+        <p class="feat-desc">Farm rockets, armour shards, powerups and health across maps and send them directly to clan members fighting fierce arena battles or tournaments — in OQUAKE, ODOOM or any connected game. Assign a dedicated farmer while your best players burn through supplies in matches. Build emergency stockpiles. Coordinate clan logistics across the entire Omniverse. A whole new level of strategy Quake never had.</p>
+      </div>
+      <div class="feat-card reveal">
+        <span class="feat-icon">⚡</span>
+        <div class="feat-title">QUICK COMBAT ACTIONS</div>
+        <p class="feat-desc">No time to open your inventory mid-arena? Press <strong style="color:var(--amber)">C</strong> to instantly use a health pack or <strong style="color:var(--amber)">F</strong> to slam on armour without breaking combat flow. Bank dozens of supplies from farming sessions and deploy them in a single keypress when it matters most.</p>
+      </div>
+
+      <div class="feat-card reveal">
+        <span class="feat-icon">🦸</span>
+        <div class="feat-title">KARMA POWERS YOUR STATS</div>
+        <p class="feat-desc">Do good in real life through Our World — exercise, eat healthy, pick up litter, help your community — and your OQUAKE avatar gets measurably stronger. Max health, max armour, max ammo and movement speed all increase as your karma grows. The real-life superhero training program is real. You become the Quake champion.</p>
+      </div>
+
+      <div class="feat-card reveal">
+        <span class="feat-icon">⚙️</span>
+        <div class="feat-title">FULLY CONFIGURABLE</div>
+        <p class="feat-desc">Server operators, tournament organisers and modders control everything via <strong style="color:var(--amber)">oasisstar.json</strong> — configurable locally or on the server. Toggle stacking per item type, set custom max health and armour caps, choose which items and monster kills mint as NFTs (configurable per monster type), enable auto-use on pickup, set the NFT provider, and much more. In future, all settings will also be configurable directly through <a href="https://oportal.oasisomniverse.one" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none">OPORTAL</a> and <a href="https://starnet.oasisomniverse.one" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:none">STARNET</a>.</p>
+      </div>
+
+      <div class="feat-card reveal">
+        <span class="feat-icon">📶</span>
+        <div class="feat-title">OFFLINE PLAY &amp; SYNC</div>
+        <p class="feat-desc">Play OQUAKE without an internet connection. Progress, inventory and quest data sync automatically the moment you reconnect — ideal for poor or intermittent connectivity anywhere in the world.</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ VIDEO ══════════════════════ -->
+<section class="vid-section">
+  <div class="inner">
+    <p class="section-kicker reveal">SEE IT IN ACTION</p>
+    <h2 class="section-title reveal">Watch OQUAKE</h2>
+    <span class="section-line reveal"></span>
+    <p class="section-sub reveal">Live tech demo showcasing OGEngine integration, cross-game inventory, GeoHotSpot triggers and OASIS Avatar SSO.</p>
+    <div class="vid-grid reveal">
+      <div class="vid-card">
+        <div class="vid-frame"><iframe src="https://www.youtube-nocookie.com/embed/ZH5u6OVPVYg" title="OQUAKE OGEngine Tech Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="vid-info">
+          <div class="vid-kicker-oquake">OQUAKE · TECH DEMO</div>
+          <div class="vid-title-oquake">OGENGINE INTEGRATION DEMO</div>
+          <div class="vid-text">Live demonstration of OQUAKE on OGEngine — OASIS Avatar SSO, shared inventory, cross-game quests and GeoHotSpot triggers in action.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BECOME -->
+<section id="become-q">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">You Are the Quake Champion</div>
+      <h2 class="section-title">Become the Legend</h2>
+    </div>
+    <div class="become-intro-q reveal">
+      <p>OQuake doesn't just simulate a champion — it <strong>makes you one</strong>. Your real-world actions in Our World feed directly into your stats. The more good you do out there — litter pick, help your community, exercise, eat well — the faster, tougher and deadlier you become in the arena. This is the true metaverse: a superhero training program wrapped in the greatest arena shooter ever made.</p>
+    </div>
+    <div class="become-grid-q reveal">
+      <div class="bcard-q green">
+        <span class="bcard-icon-q">🦸</span>
+        <div class="bcard-title-q">Karma Powers Your Stats</div>
+        <div class="bcard-body-q">
+          <p>Earn karma in Our World by completing real-life quests. That karma flows directly into OQuake, increasing your maximum health, armour, ammo capacity and movement speed.</p>
+          <div class="karma-actions-q">
+            <span class="karma-pill-q">Pick up litter</span>
+            <span class="karma-pill-q">Help the community</span>
+            <span class="karma-pill-q">Exercise</span>
+            <span class="karma-pill-q">Eat healthy</span>
+            <span class="karma-pill-q">Meditate</span>
+            <span class="karma-pill-q">Volunteer</span>
+            <span class="karma-pill-q">Complete IRL quests</span>
+          </div>
+          <div class="stat-boosts-q">
+            <div class="stat-boost-q"><span class="stat-boost-label-q">MAX HEALTH</span><span class="stat-boost-val-q">↑ with karma</span></div>
+            <div class="stat-boost-q"><span class="stat-boost-label-q">MAX ARMOUR</span><span class="stat-boost-val-q">↑ with karma</span></div>
+            <div class="stat-boost-q"><span class="stat-boost-label-q">MAX AMMO</span><span class="stat-boost-val-q">↑ with karma</span></div>
+            <div class="stat-boost-q"><span class="stat-boost-label-q">SPEED</span><span class="stat-boost-val-q">↑ with karma</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="bcard-q amber">
+        <span class="bcard-icon-q">⚡</span>
+        <div class="bcard-title-q">Quick Combat Actions</div>
+        <div class="bcard-body-q">
+          <p>No more fumbling through menus mid-firefight. Instant hotkeys let you deploy health, armour or check objectives without breaking stride — or getting fragged in the arena.</p>
+          <div class="hotkeys-q">
+            <div class="hotkey-q"><span class="hotkey-key-q">C</span><span class="hotkey-label-q">USE HEALTH</span></div>
+            <div class="hotkey-q"><span class="hotkey-key-q">F</span><span class="hotkey-label-q">USE ARMOUR</span></div>
+            <div class="hotkey-q"><span class="hotkey-key-q">I</span><span class="hotkey-label-q">INVENTORY</span></div>
+            <div class="hotkey-q"><span class="hotkey-key-q">Q</span><span class="hotkey-label-q">QUESTS</span></div>
+            <div class="hotkey-q"><span class="hotkey-key-q">O</span><span class="hotkey-label-q">OBJECTIVES</span></div>
+            <div class="hotkey-q"><span class="hotkey-key-q">X</span><span class="hotkey-label-q">VIEW XP</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="bcard-q full">
+        <span class="bcard-icon-q">⚙️</span>
+        <div class="bcard-title-q">Fully Configurable — oasisstar.json</div>
+        <div class="bcard-body-q">
+          <p style="margin-bottom:1rem">Every rule is tunable via <code style="color:#00e5ff">oasisstar.json</code> — per server, per tournament, per map. In future, these settings will also be configurable through the <strong style="color:#00e5ff">OPORTAL &amp; STARNET</strong>.</p>
+          <div class="config-grid-q">
+            <div class="config-row-q"><span class="config-key-q">stack_weapons</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">stack_armor</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">stack_powerups</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">stack_keys</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_weapons</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_armor</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_keys</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_powerups</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_monster_grunt</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_monster_ogre</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_monster_fiend</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_monster_shambler</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">mint_monster_vore</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">max_health</span><span class="config-val-q">200</span></div>
+            <div class="config-row-q"><span class="config-key-q">max_armor</span><span class="config-val-q">200</span></div>
+            <div class="config-row-q"><span class="config-key-q">use_health_on_pickup</span><span class="config-val-q">false</span></div>
+            <div class="config-row-q"><span class="config-key-q">use_armor_on_pickup</span><span class="config-val-q">false</span></div>
+            <div class="config-row-q"><span class="config-key-q">use_powerup_on_pickup</span><span class="config-val-q">false</span></div>
+            <div class="config-row-q"><span class="config-key-q">always_allow_pickup_if_max</span><span class="config-val-q">true</span></div>
+            <div class="config-row-q"><span class="config-key-q">nft_provider</span><span class="config-val-q">SolanaOASIS</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EPIC QUEST -->
+<section id="epic-quest-q">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="rift-banner-q">⚠ SPACETIME RIFT DETECTED · MULTIVERSE BREACH IN PROGRESS</div>
+      <div class="section-label">The Never-Ending Story</div>
+      <h2 class="section-title">Epic Cross-Game Quest Line</h2>
+    </div>
+    <div class="quest-intro-q reveal">
+      <p>The rifts don't stop at Doom. Strange portals tear open in Quake's arenas — Doom imps stumbling through from Mars, Quake shamblers bleeding into UAC corridors. Keys found in ODOOM unlock doors here. Powerups discovered in Our World change the tide of battle. The quest line spans every game in the OASIS Omniverse, and OQuake is right at the heart of it.</p>
+    </div>
+    <div class="shareware-note-q reveal">
+      <p>Just like the original <strong>DOOM Episode 1</strong> launched as shareware — free to play and free to share — <strong>Chapter I of the cross-game quest line is completely free</strong>. It starts in ODOOM, passes through OQuake, loops back to Our World, and returns to ODOOM to close. Download it, play it, pass it on.</p>
+    </div>
+    <div class="quest-chapters-q reveal">
+      <div class="chapter-tile-q ch-1">
+        <div class="chapter-num-q">CHAPTER I · AVAILABLE NOW · SHAREWARE</div>
+        <div class="chapter-flow-q">ODOOM → OQuake → ODOOM → Our World → ODOOM</div>
+        <div class="chapter-title-q">The UAC Breach — OQuake Act</div>
+        <div class="chapter-desc-q">A portal tears open mid-match. You're pulled into Quake's dimension to find a rune fragment — with Doom imps right behind you. Recover the fragment, survive the arena, and get back to Mars before the rift closes. What you do here changes the rest of Chapter I.</div>
+      </div>
+      <div class="chapter-tile-q ch-2">
+        <div class="chapter-num-q">CHAPTER II · COMING SOON</div>
+        <div class="chapter-flow-q">ODOOM → OQuake → ODOOM3 → Our World → ···</div>
+        <div class="chapter-title-q">The Second Rift</div>
+        <div class="chapter-desc-q">The breach widened. New rifts open into ODOOM3 and beyond. OQuake becomes a crossroads — a nexus dimension where artefacts and monsters from every world converge. The stakes keep rising.</div>
+      </div>
+      <div class="chapter-tile-q ch-more">
+        <div class="chapter-num-q">CHAPTER III AND BEYOND · FOREVER</div>
+        <div class="chapter-flow-q">Every game · Every world · Every rift</div>
+        <div class="chapter-title-q">The Endless Omniverse</div>
+        <div class="chapter-desc-q">As Wolfenstein, Duke Nukem, Quake 2 and more join the OASIS Omniverse, each new chapter expands. OQuake's arenas will always be at the centre of the storm.</div>
+      </div>
+      <div class="chapter-tile-q ch-more">
+        <div class="chapter-num-q">AI SHAPES THE STORY</div>
+        <div class="chapter-flow-q">Frontier AI · Evolving narrative · Infinite replayability</div>
+        <div class="chapter-title-q">No Two Playthroughs Alike</div>
+        <div class="chapter-desc-q">AI-powered monsters and dungeon masters adapt the story to your choices. Every run is unique. The Omniverse remembers — and it evolves to challenge you.</div>
+      </div>
+    </div>
+    <div class="quest-tagline-q reveal">THE STORY NEVER ENDS · IT JUST KEEPS EXPANDING</div>
+  </div>
+</section>
+
+<!-- AI COMBAT -->
+<section id="ai-q">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="section-label">A New Kind of Enemy</div>
+      <h2 class="section-title">AI-Powered Combat</h2>
+    </div>
+    <div class="ai-intro-q reveal">
+      <p>The arena evolved. Frontier AI agents now control the most powerful monsters in OQuake — co-ordinating, learning your movement patterns, evolving in real time and raising the challenge to a level no scripted bot ever reached. This is not a difficulty slider. This is <em>actual intelligence</em> hunting you through Quake's dimensions.</p>
+    </div>
+    <div class="ai-agents-q reveal">
+      <span class="ai-agent-pill-q">Claude</span>
+      <span class="ai-agent-pill-q">OpenAI</span>
+      <span class="ai-agent-pill-q">Grok</span>
+      <span class="ai-agent-pill-q">Gemini</span>
+      <span class="ai-agent-pill-q">DeepSeek</span>
+      <span class="ai-agent-pill-q">+ more frontier agents</span>
+    </div>
+    <div class="ai-modes-q reveal">
+      <div class="ai-tile-q">
+        <span class="ai-tile-icon-q">🏟️</span>
+        <div class="ai-tile-title-q">AI Shambler Tournament</div>
+        <div class="ai-tile-desc-q">Each frontier AI agent controls a Shambler in a dedicated tournament arena. They battle it out — co-ordinating lightning attacks, adapting tactics and competing to be the last monster standing. Watch or play. Either way, the stakes are terrifyingly real.</div>
+      </div>
+      <div class="ai-tile-q">
+        <span class="ai-tile-icon-q">🧠</span>
+        <div class="ai-tile-title-q">Co-ordinated Monster Intelligence</div>
+        <div class="ai-tile-desc-q">AI agents control monster squads that communicate and co-ordinate in real time. They analyse your movement, remember your weapon choices and adapt. Every room could be a trap. Every hallway could be a kill box set specifically for you.</div>
+      </div>
+      <div class="ai-tile-q">
+        <span class="ai-tile-icon-q">📈</span>
+        <div class="ai-tile-title-q">Evolving Difficulty</div>
+        <div class="ai-tile-desc-q">The AI learns across sessions. The longer you play, the smarter the monsters get. Your favourite routes get covered. Your go-to weapon combos get countered. The Omniverse remembers everything — and uses it against you.</div>
+      </div>
+      <div class="ai-tile-q">
+        <span class="ai-tile-icon-q">⚔️</span>
+        <div class="ai-tile-title-q">Human vs AI Gauntlet</div>
+        <div class="ai-tile-desc-q">Face a gauntlet of AI-controlled bosses, each powered by a different frontier agent with its own playstyle and strategy. Survive all of them to claim your place on the Omniverse leaderboard. We are only just getting started.</div>
+      </div>
+    </div>
+    <div class="ai-tagline-q reveal">THE ARENA EVOLVED · CAN YOU?</div>
   </div>
 </section>
 
@@ -554,7 +859,7 @@ footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60
     <h2>Ready to Move Fast?</h2>
     <p>Download OQUAKE, collect your first real-world weapon from a park near you, and take the fight to the arena. Your OASIS Avatar is waiting.</p>
     <div class="cta-btns">
-      <a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-API-CLIENT-v1.0.0" target="_blank" class="btn-amber">DOWNLOAD OQUAKE</a>
+      <a href="https://github.com/NextGenSoftwareUK/OQUAKE/releases/tag/OQUAKE_v1.0.0_ALPHA" target="_blank" class="btn-amber">DOWNLOAD OQUAKE</a>
       <a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank" class="btn-outline">VIEW ON GITHUB</a>
     </div>
   </div>
@@ -563,61 +868,85 @@ footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60
 <!-- ══════════════════════ FOOTER ══════════════════════ -->
 <footer>
   <div class="foot-inner">
-    <div class="foot-grid">
-      <div>
-        <div class="foot-brand-name">
-          <svg width="18" height="18" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="15" cy="15" r="13.5" fill="none" stroke="#ff8800" stroke-width="1.5"/>
-            <polygon points="15,4 11,15.5 14.2,15.5 10,26 20,14.5 16.2,14.5 20,4" fill="#ff8800"/>
-          </svg>
-          OQUAKE
-        </div>
-        <p class="foot-brand-desc">Lightning-fast arena combat on vkQuake, fully integrated with the OASIS Omniverse. Real-world GPS loot. Cross-game inventory. AR coming soon.</p>
-        <div class="foot-socials">
-          <a href="https://discord.gg/q5GKnsDkRN" target="_blank" class="social-btn">Discord</a>
-          <a href="https://twitter.com/ourworldthegame" target="_blank" class="social-btn">X / Twitter</a>
-          <a href="https://t.me/oasisplatform" target="_blank" class="social-btn">Telegram</a>
-          <a href="https://www.youtube.com/channel/UC0_O4RwdY3lq1m3-K-njUxA" target="_blank" class="social-btn">YouTube</a>
-        </div>
+    <div class="foot-brand" style="text-align:center">
+      <div class="foot-brand-name" style="justify-content:center">
+        <svg width="18" height="18" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="13.5" fill="none" stroke="#ff8800" stroke-width="1.5"/>
+          <polygon points="15,4 11,15.5 14.2,15.5 10,26 20,14.5 16.2,14.5 20,4" fill="#ff8800"/>
+        </svg>
+        OQUAKE
       </div>
+      <p class="foot-brand-desc" style="max-width:none;margin:0 auto 1rem">Lightning-fast arena combat on vkQuake, fully integrated with the OASIS Omniverse. Real-world GPS loot. Cross-game inventory. AR coming soon.</p>
+    </div>
+    <div class="foot-grid">
       <div>
         <div class="foot-col-title">ECOSYSTEM</div>
         <ul class="foot-links">
           <li><a href="https://oasisomniverse.one" target="_blank">OASIS Omniverse</a></li>
-          <li><a href="https://ogengine.oasisomniverse.one" target="_blank">OGEngine</a></li>
-          <li><a href="https://odoom.oasisomniverse.one" target="_blank">ODOOM</a></li>
-          <li><a href="https://ourworld.oasisomniverse.one" target="_blank">Our World</a></li>
-          <li><a href="https://holonet.oasisomniverse.one" target="_blank">HoloNET</a></li>
+          <li><a href="https://web4.oasisomniverse.one" target="_blank">Web4</a></li>
           <li><a href="https://oportal.oasisomniverse.one" target="_blank">OPORTAL</a></li>
+          <li><a href="https://starnet.oasisomniverse.one" target="_blank">STARNET</a></li>
+          <li><a href="https://ogengine.oasisomniverse.one" target="_blank">OGEngine</a></li>
+          <li><a href="https://ourworld.oasisomniverse.one" target="_blank">Our World</a></li>
+          <li><a href="https://odoom.oasisomniverse.one" target="_blank">ODOOM</a></li>
+          <li><a href="https://holonet.oasisomniverse.one" target="_blank">HoloNET</a></li>
+          <li><a href="https://founders.oasisomniverse.one" target="_blank">Founders NFT</a></li>
         </ul>
       </div>
       <div>
-        <div class="foot-col-title">RESOURCES</div>
+        <div class="foot-col-title">BUILD</div>
         <ul class="foot-links">
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-API-CLIENT-v1.0.0" target="_blank">Download OQUAKE</a></li>
-          <li><a href="https://api.web4.oasisomniverse.one" target="_blank">WEB4 OASIS API</a></li>
-          <li><a href="https://api.starnet.oasisomniverse.one" target="_blank">WEB5 STAR API</a></li>
-          <li><a href="https://starnet.oasisomniverse.one" target="_blank">StarNet</a></li>
-          <li><a href="https://nft.oasisomniverse.one" target="_blank">Founders NFT</a></li>
+          <li><a href="https://api.web4.oasisomniverse.one/swagger" target="_blank">Web4 OASIS API</a></li>
+          <li><a href="https://api.starnet.oasisomniverse.one/swagger" target="_blank">Web5 STARNET API</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-ODK-Runtime-v3.5.0" target="_blank">STAR CLI/ODK</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-API-CLIENT-v1.0.0" target="_blank">STAR API Client</a></li>
+          <li><a href="https://www.nuget.org/profiles/dellams" target="_blank">NuGet (50 pkgs)</a></li>
+          <li><a href="https://oasis-web4.gitbook.io/oasis-web4-docs/" target="_blank">GitBook Docs</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank">GitHub</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/tree/master/Docs/Devs/API%20Documentation" target="_blank">API Reference</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/DEVELOPER_DOCUMENTATION_INDEX.md" target="_blank">Developer Index</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-title">READ</div>
+        <ul class="foot-links">
+          <li><a href="https://github.com/NextGenSoftwareUK/OQUAKE/releases/tag/OQUAKE_v1.0.0_ALPHA" target="_blank">Download OQUAKE</a></li>
+          <li><a href="https://oasisomniverse.one#flightmap" target="_blank">Flight Map</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/THE_OASIS_COMPREHENSIVE_WHITEPAPER.md" target="_blank">Whitepaper</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OUR_WORLD_WHITEPAPER.md" target="_blank">Our World Whitepaper</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/INVESTOR_EVALUATION_GUIDE.md" target="_blank">Investor Guide</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/GETTING_STARTED_INDEX.md" target="_blank">Getting Started</a></li>
+          <li><a href="https://www.oasisweb4.com/holonic-architecture" target="_blank">Holonic Architecture</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/WIKI_DOCUMENTATION_INDEX.md" target="_blank">Wiki</a></li>
+          <li><a href="https://www.ourworldthegame.com/blog" target="_blank">Blog</a></li>
         </ul>
       </div>
       <div>
         <div class="foot-col-title">COMMUNITY</div>
         <ul class="foot-links">
-          <li><a href="https://discord.gg/q5GKnsDkRN" target="_blank">Discord</a></li>
-          <li><a href="https://twitter.com/ourworldthegame" target="_blank">X / Twitter</a></li>
-          <li><a href="https://t.me/oasisplatform" target="_blank">Telegram</a></li>
-          <li><a href="https://www.youtube.com/channel/UC0_O4RwdY3lq1m3-K-njUxA" target="_blank">YouTube — Our World Legacy</a></li>
-          <li><a href="https://nft.oasisomniverse.one" target="_blank">Founders NFT</a></li>
+          <li><a href="https://discord.gg/q9gMKU6" target="_blank">Discord</a></li>
+          <li><a href="https://t.me/oasisweb4chat" target="_blank">Telegram</a></li>
+          <li><a href="https://x.com/OASISWEB4" target="_blank">𝕏 OASIS WEB4</a></li>
+          <li><a href="https://x.com/OurWorldTheGame" target="_blank">𝕏 Our World</a></li>
+          <li><a href="https://x.com/HoloNET_OASIS" target="_blank">𝕏 HoloNET</a></li>
+          <li><a href="https://www.youtube.com/@WEB4OASIS" target="_blank">YouTube OASIS</a></li>
+          <li><a href="https://www.youtube.com/@ourworld-the-game" target="_blank">YouTube Our World</a></li>
+          <li><a href="https://www.youtube.com/channel/UC0_O4RwdY3lq1m3-K-njUxA" target="_blank">YouTube Our World Legacy</a></li>
+          <li><a href="https://www.facebook.com/ourworldthegame" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-col-title">SUPPORT</div>
+        <ul class="foot-links">
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/issues" target="_blank">Report an Issue</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/discussions" target="_blank">Discussions</a></li>
+          <li><a href="https://tally.so/r/WOZjNa" target="_blank">Submit a Support Ticket</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span class="foot-copy">© 2026 NextGen Software Ltd — OQUAKE is part of the OASIS Omniverse</span>
-      <div class="foot-sub-links">
-        <a href="https://oasisomniverse.one" target="_blank">oasisomniverse.one</a>
-        <a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank">GitHub</a>
-      </div>
+      <p class="foot-copy">© 2026 <a href="https://nextgenworld.co.uk">NextGen Software Ltd.</a> All rights reserved.</p>
+      <p class="foot-copy">Part of the <a href="https://oasisomniverse.one" target="_blank">OASIS Omniverse</a> ecosystem.</p>
     </div>
   </div>
 </footer>
