@@ -120,7 +120,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .feat-icon{font-size:34px;margin-bottom:14px;display:block}
 .feat-title{font-family:'Orbitron',sans-serif;font-size:12px;letter-spacing:.1em;color:var(--amber);margin-bottom:10px}
 .feat-card.coming-soon .feat-title{color:var(--cyan)}
-.feat-desc{font-size:14px;color:#a8bfd8;line-height:1.65}
+.feat-desc{font-size:16px;color:#a8bfd8;line-height:1.65}
 .feat-desc a{color:var(--amber);border-bottom:1px solid rgba(255,136,0,.25);transition:color .2s}
 .feat-desc a:hover{color:#ffb347}
 .feat-card.coming-soon .feat-desc a{color:var(--cyan)}
@@ -140,7 +140,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .rw-card.amber .rw-card-title{color:var(--amber)}
 .rw-card.orange .rw-card-title{color:#ff6400}
 .rw-card.cyan .rw-card-title{color:var(--cyan)}
-.rw-card p{font-size:14px;color:#a8bfd8;line-height:1.65}
+.rw-card p{font-size:16px;color:#a8bfd8;line-height:1.65}
 .rw-card.cyan p{color:#a8bfd8}
 .soon-badge{display:inline-block;margin-top:12px;font-family:'Share Tech Mono',monospace;font-size:9px;letter-spacing:.18em;padding:4px 10px;border:1px solid rgba(0,229,255,.4);border-radius:999px;color:var(--cyan)}
 .how-strip{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:36px 28px}
@@ -176,7 +176,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .rm-phase{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.2em;color:#a8bfd8;margin-bottom:8px}
 .rm-title{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--amber);margin-bottom:12px}
 .rm-tile.future .rm-title{color:#a8bfd8}
-.rm-desc{font-size:13px;color:#a8bfd8;line-height:1.6}
+.rm-desc{font-size:15px;color:#a8bfd8;line-height:1.6}
 .rm-status{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.12em}
 .rm-status.inprogress{color:var(--amber)}
 .rm-status.inprogress::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 8px rgba(255,136,0,.8);animation:pulseGlow 1.5s ease-in-out infinite}
@@ -203,17 +203,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 /* ── FOOTER ── */
 footer{background:rgba(3,7,20,.98);border-top:1px solid var(--border);padding:60px 20px 32px}
 .foot-inner{max-width:1400px;margin:0 auto;padding:0 1rem}
-.foot-brand{margin-bottom:3.5rem}.foot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;margin-bottom:48px}
+.foot-brand{margin-bottom:3.5rem}.foot-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1.5rem;margin-bottom:48px}
 @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.foot-grid{grid-template-columns:1fr}}
 .foot-brand-name{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;letter-spacing:.2em;color:var(--amber);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.foot-brand-desc{font-size:13px;color:#a8bfd8;line-height:1.7;margin-bottom:18px;max-width:260px}
+.foot-brand-desc{font-size:15px;color:#a8bfd8;line-height:1.7;margin-bottom:18px;max-width:260px}
 .foot-socials{display:flex;gap:10px;flex-wrap:wrap}
 .social-btn{font-family:'Share Tech Mono',monospace;font-size:10px;letter-spacing:.1em;padding:6px 12px;border:1px solid rgba(255,136,0,.2);border-radius:6px;color:#a8bfd8;transition:color .2s,border-color .2s}
 .social-btn:hover{color:var(--amber);border-color:rgba(255,136,0,.5)}
 .foot-col-title{font-family:'Orbitron',sans-serif;font-size:10px;letter-spacing:.2em;color:var(--amber);margin-bottom:16px}
 .foot-links{list-style:none;display:flex;flex-direction:column;gap:5px}
-.foot-links a{font-size:13px;color:#a8bfd8;transition:color .2s}
+.foot-links a{font-size:15px;color:#a8bfd8;transition:color .2s}
 footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(255,136,0,.8)) drop-shadow(0 0 40px rgba(255,136,0,.4))}
 .foot-bottom{border-top:1px solid rgba(255,136,0,.08);padding-top:24px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .foot-copy{font-family:'Share Tech Mono',monospace;font-size:10px;color:#a8bfd8;letter-spacing:.08em}.foot-copy a{color:#a8bfd8 !important;text-decoration:none !important;border-bottom:none !important}
@@ -351,6 +351,7 @@ a:hover{filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(
     <li><a href="#realworld">Real World</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank" class="nav-cta">GITHUB</a></li>
+    <li><a href="https://oasisomniverse.one" target="_blank" rel="noopener">ECOSYSTEM</a></li>
   </ul>
 </nav>
 
@@ -1061,6 +1062,15 @@ a:hover{filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(
         </ul>
       </div>
       <div>
+        <div class="foot-col-title">FOUNDERS</div>
+        <ul class="foot-links">
+          <li><a href="https://founders.oasisomniverse.one" target="_blank" rel="noopener">Founders NFT</a></li>
+          <li><a href="https://founders.oasisomniverse.one#tiers" target="_blank" rel="noopener">Genesis Tier</a></li>
+          <li><a href="https://founders.oasisomniverse.one#tiers" target="_blank" rel="noopener">Core Tier</a></li>
+          <li><a href="https://founders.oasisomniverse.one#tiers" target="_blank" rel="noopener">Supporter Tier</a></li>
+        </ul>
+      </div>
+      <div>
         <div class="foot-col-title">COMMUNITY</div>
         <ul class="foot-links">
           <li><a href="https://discord.gg/q9gMKU6" target="_blank">Discord</a></li>
@@ -1087,7 +1097,7 @@ a:hover{filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(
       <p class="foot-copy" style="font-size:.72rem;color:#a8bfd8;max-width:860px;margin:0 auto;line-height:1.6">Quake&reg; is a registered trademark of id Software LLC, a ZeniMax Media company. OQUAKE is an independent fan modification built on the GPL-licensed vkQuake engine and is not affiliated with, endorsed by, or sponsored by id Software, ZeniMax Media, or Bethesda Softworks. OQUAKE requires a legitimate copy of Quake to run. All Quake game assets remain the property of their respective owners.</p>
     </div>
     <div class="foot-bottom" style="border-top:none;padding-top:16px">
-      <p class="foot-copy">© 2026 <a href="https://nextgenworld.co.uk">NextGen Software Ltd.</a> All rights reserved.</p>
+      <p class="foot-copy">© 2026 <a href="https://nextgenworld.co.uk" target="_blank" rel="noopener">NextGen Software Ltd.</a> All rights reserved.</p>
       <p class="foot-copy">Part of the <a href="https://oasisomniverse.one" target="_blank">OASIS Omniverse</a> ecosystem.</p>
     </div>
   </div>
