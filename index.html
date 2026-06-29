@@ -55,6 +55,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .nav-links a:hover{color:var(--amber);filter:drop-shadow(0 0 6px rgba(255,136,0,.6))}
 .nav-cta{font-family:'Orbitron',sans-serif!important;font-size:11px!important;font-weight:700!important;letter-spacing:.12em!important;color:#0a0500!important;background:var(--amber);padding:9px 18px;border-radius:6px;transition:box-shadow .2s,transform .2s}
 .nav-cta:hover{box-shadow:0 0 24px rgba(255,136,0,.55);transform:translateY(-1px);filter:none!important;color:#0a0500!important}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-hamburger span{display:block;width:22px;height:2px;background:var(--amber);border-radius:2px;transition:transform .3s}
 
 /* ── HERO ── */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(255,136,0,.07) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 80% 80%,rgba(255,136,0,.04) 0%,transparent 60%)}
@@ -221,9 +223,19 @@ footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) 
 .foot-sub-links a{font-family:'Share Tech Mono',monospace;font-size:10px;color:#a8bfd8;letter-spacing:.08em;transition:color .2s}
 .foot-sub-links a:hover{color:var(--amber)}
 
+@media(max-width:900px){
+  .nav-links{display:none}
+  .nav-hamburger{display:flex}
+  .features-grid,.rw-grid,.roadmap-grid,.become-grid-q,.quest-chapters-q,.ai-modes-q,.singularity-cards,.vid-grid{
+    grid-template-columns:1fr !important;
+    gap:1rem;
+  }
+  .feat-card{padding:1.3rem}
+  .feat-title{font-size:.95rem}
+  .feat-desc{font-size:.95rem}
+}
 @media(max-width:700px){
   nav{padding:0 16px}
-  .nav-links{gap:14px}
   .hero-title{font-size:clamp(32px,10vw,60px)}
   .section{padding:60px 16px}
   .about-grid{gap:32px}
@@ -231,6 +243,15 @@ footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) 
   .how-step:not(:last-child)::after{display:none}
   .cta-box{padding:40px 22px}
   .foot-grid{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+  .feat-card,.rw-card,.rm-tile,.bcard-q,.chapter-tile-q,.ai-tile-q,.singularity-card{
+    padding:1rem;
+  }
+  .feat-title,.rm-title,.bcard-title-q,.chapter-title-q{font-size:.85rem;line-height:1.2}
+  .feat-desc,.rm-desc,.bcard-body-q,.chapter-desc-q{font-size:.88rem;line-height:1.5}
+  .section-title{font-size:clamp(18px,7vw,26px)}
+  .hero-sub{font-size:1rem}
 }
 a:hover{filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(255,136,0,.8)) drop-shadow(0 0 40px rgba(255,136,0,.4))}
 /* ── SHAREWARE BADGE ── */
@@ -348,11 +369,16 @@ a:hover{filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#features">Features</a></li>
+    <li><a href="#become-q">Become the Legend</a></li>
+    <li><a href="#epic-quest-q">Epic Quest</a></li>
+    <li><a href="#singularity-q">Singularity</a></li>
+    <li><a href="#ai-q">AI Combat</a></li>
     <li><a href="#realworld">Real World</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank" class="nav-cta">GITHUB</a></li>
     <li><a href="https://oasisomniverse.one" target="_blank" rel="noopener">ECOSYSTEM</a></li>
   </ul>
+  <div class="nav-hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
 </nav>
 
 <!-- ══════════════════════ HERO ══════════════════════ -->
@@ -1206,6 +1232,22 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if(id === '#') return;
     const target = document.querySelector(id);
     if(target){ e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+
+/* ── MOBILE MENU ── */
+function toggleMenu(){
+  const links = document.querySelector('.nav-links');
+  if(links.style.display === 'flex'){
+    links.style.display = 'none';
+  } else {
+    links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:rgba(3,7,20,.97);padding:20px 28px;gap:18px;border-bottom:1px solid var(--border);backdrop-filter:blur(12px)';
+  }
+}
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    const links = document.querySelector('.nav-links');
+    if(window.innerWidth < 900) links.style.display = 'none';
   });
 });
 </script>
