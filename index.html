@@ -224,9 +224,18 @@ footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) 
 .foot-sub-links a:hover{color:var(--amber)}
 
 @media(max-width:900px){
-  .nav-links{display:none;gap:0;align-items:stretch}
-  nav .nav-links li{margin:0;padding:0}
-  nav .nav-links a{display:block;padding:.55rem 1.25rem;font-size:.88rem;text-align:left;border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav-links{
+    display:flex!important;flex-direction:column;gap:0;
+    position:fixed;top:0;right:0;height:100vh;width:min(78vw,320px);
+    justify-content:center;align-items:flex-start;
+    background:rgba(3,7,20,.97);backdrop-filter:blur(16px);
+    border-left:1px solid rgba(255,136,0,.18);
+    padding:40px;z-index:999;
+    transform:translateX(100%);transition:transform .3s ease;
+  }
+  .nav-links.open{transform:translateX(0)}
+  nav .nav-links li{margin:0;padding:0;width:100%}
+  nav .nav-links a{display:block;padding:14px 0;font-size:.88rem;text-align:left;border-bottom:1px solid rgba(255,255,255,.08);width:100%}
   .nav-hamburger{display:flex}
   .features-grid,.rw-grid,.roadmap-grid,.become-grid-q,.quest-chapters-q,.ai-modes-q,.singularity-cards,.vid-grid{
     grid-template-columns:1fr !important;
@@ -1243,17 +1252,12 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 /* ── MOBILE MENU ── */
 function toggleMenu(){
-  const links = document.querySelector('.nav-links');
-  if(links.style.display === 'flex'){
-    links.style.display = 'none';
-  } else {
-    links.style.cssText = 'display:flex;flex-direction:column;align-items:stretch;position:absolute;top:62px;left:0;right:0;background:rgba(3,7,20,.97);padding:0;gap:0;border-bottom:1px solid var(--border);backdrop-filter:blur(12px);z-index:999';
-  }
+  document.querySelector('.nav-links').classList.toggle('open');
 }
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => {
     const links = document.querySelector('.nav-links');
-    if(window.innerWidth < 900) links.style.display = 'none';
+    if(window.innerWidth < 900) links.classList.remove('open');
   });
 });
 </script>
