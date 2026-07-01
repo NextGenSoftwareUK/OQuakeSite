@@ -224,7 +224,9 @@ footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) 
 .foot-sub-links a:hover{color:var(--amber)}
 
 @media(max-width:900px){
-  .nav-links{display:none}
+  .nav-links{display:none;gap:0;align-items:stretch}
+  nav .nav-links li{margin:0;padding:0}
+  nav .nav-links a{display:block;padding:.55rem 1.25rem;font-size:.88rem;text-align:left;border-bottom:1px solid rgba(255,255,255,.08)}
   .nav-hamburger{display:flex}
   .features-grid,.rw-grid,.roadmap-grid,.become-grid-q,.quest-chapters-q,.ai-modes-q,.singularity-cards,.vid-grid{
     grid-template-columns:1fr !important;
@@ -1245,7 +1247,7 @@ function toggleMenu(){
   if(links.style.display === 'flex'){
     links.style.display = 'none';
   } else {
-    links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:rgba(3,7,20,.97);padding:20px 28px;gap:18px;border-bottom:1px solid var(--border);backdrop-filter:blur(12px)';
+    links.style.cssText = 'display:flex;flex-direction:column;align-items:stretch;position:absolute;top:62px;left:0;right:0;background:rgba(3,7,20,.97);padding:0;gap:0;border-bottom:1px solid var(--border);backdrop-filter:blur(12px);z-index:999';
   }
 }
 document.querySelectorAll('.nav-links a').forEach(a => {
