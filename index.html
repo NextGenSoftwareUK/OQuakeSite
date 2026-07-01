@@ -51,7 +51,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .nav-logo{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:.2em;color:var(--amber);display:flex;align-items:center;gap:10px}
 .nav-logo-icon{width:30px;height:30px;flex-shrink:0}
 .nav-links{display:flex;align-items:center;gap:26px;list-style:none}
-.nav-links a{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.12em;color:#a8bfd8;transition:color .2s,filter .2s}
+.nav-links a{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.12em;color:#a8bfd8;transition:color .2s,filter .2s;text-transform:uppercase}
 .nav-links a:hover{color:var(--amber);filter:drop-shadow(0 0 6px rgba(255,136,0,.6))}
 .nav-cta{font-family:'Orbitron',sans-serif!important;font-size:11px!important;font-weight:700!important;letter-spacing:.12em!important;color:#0a0500!important;background:var(--amber);padding:9px 18px;border-radius:6px;transition:box-shadow .2s,transform .2s}
 .nav-cta:hover{box-shadow:0 0 24px rgba(255,136,0,.55);transform:translateY(-1px);filter:none!important;color:#0a0500!important}
@@ -230,10 +230,10 @@ footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) 
   .nav-links{
     display:flex!important;flex-direction:column;gap:0;
     position:fixed;top:0;right:0;height:100vh;width:min(78vw,320px);
-    justify-content:center;align-items:flex-start;
+    justify-content:flex-start;align-items:flex-start;
     background:rgba(3,7,20,.97);backdrop-filter:blur(16px);
     border-left:1px solid rgba(255,136,0,.18);
-    padding:40px;z-index:999;
+    padding:100px 40px 40px;z-index:999;
     transform:translateX(100%);transition:transform .3s ease;
   }
   .nav-links.open{transform:translateX(0)}
