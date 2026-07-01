@@ -55,8 +55,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .nav-links a:hover{color:var(--amber);filter:drop-shadow(0 0 6px rgba(255,136,0,.6))}
 .nav-cta{font-family:'Orbitron',sans-serif!important;font-size:11px!important;font-weight:700!important;letter-spacing:.12em!important;color:#0a0500!important;background:var(--amber);padding:9px 18px;border-radius:6px;transition:box-shadow .2s,transform .2s}
 .nav-cta:hover{box-shadow:0 0 24px rgba(255,136,0,.55);transform:translateY(-1px);filter:none!important;color:#0a0500!important}
-.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.nav-hamburger span{display:block;width:22px;height:2px;background:var(--amber);border-radius:2px;transition:transform .3s}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;z-index:1000;position:relative}
+.nav-hamburger span{display:block;width:22px;height:2px;background:var(--amber);border-radius:2px;transition:transform .25s,opacity .25s}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* ── HERO ── */
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px 60px;position:relative;overflow:hidden;background:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(255,136,0,.07) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 80% 80%,rgba(255,136,0,.04) 0%,transparent 60%)}
@@ -1253,11 +1256,14 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 /* ── MOBILE MENU ── */
 function toggleMenu(){
   document.querySelector('.nav-links').classList.toggle('open');
+  document.querySelector('.nav-hamburger').classList.toggle('open');
 }
 document.querySelectorAll('.nav-links a').forEach(a => {
   a.addEventListener('click', () => {
-    const links = document.querySelector('.nav-links');
-    if(window.innerWidth < 900) links.classList.remove('open');
+    if(window.innerWidth < 900){
+      document.querySelector('.nav-links').classList.remove('open');
+      document.querySelector('.nav-hamburger').classList.remove('open');
+    }
   });
 });
 </script>
