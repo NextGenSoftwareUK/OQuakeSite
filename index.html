@@ -242,7 +242,7 @@ footer a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) 
   .how-steps{gap:20px}
   .how-step:not(:last-child)::after{display:none}
   .cta-box{padding:40px 22px}
-  .foot-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:520px){
   .feat-card,.rw-card,.rm-tile,.bcard-q,.chapter-tile-q,.ai-tile-q,.singularity-card{
