@@ -54,8 +54,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(3,7,20,.9);b
 .nav-links a{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:.12em;color:#a8bfd8;transition:color .2s,filter .2s;text-transform:uppercase}
 .nav-links-mobile-only{display:none}
 .nav-links a:hover{color:var(--amber);filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(255,136,0,.8)) drop-shadow(0 0 40px rgba(255,136,0,.4))}
-.nav-cta{font-family:'Orbitron',sans-serif!important;font-size:11px!important;font-weight:700!important;letter-spacing:.12em!important;color:#0a0500!important;background:var(--amber);padding:9px 18px;border-radius:6px;transition:box-shadow .2s,transform .2s}
-.nav-cta:hover{box-shadow:0 0 32px rgba(255,136,0,.7);filter:none!important;color:#0a0500!important}
+.nav-cta{font-family:'Orbitron',sans-serif!important;font-size:11px!important;font-weight:700!important;letter-spacing:.12em!important;color:#0a0500!important;background:var(--amber);padding:9px 18px;border-radius:6px;transition:box-shadow .2s,transform .2s;box-shadow:0 0 18px rgba(255,136,0,.55)}
+.nav-cta:hover{box-shadow:0 0 32px rgba(255,136,0,.85);filter:none!important;color:#0a0500!important}
 .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;z-index:1000;position:relative}
 .nav-hamburger span{display:block;width:22px;height:2px;background:var(--amber);border-radius:2px;transition:transform .25s,opacity .25s}
 .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -1105,42 +1105,53 @@ a:hover{filter:drop-shadow(0 0 8px rgba(255,136,0,1)) drop-shadow(0 0 20px rgba(
       <div>
         <div class="foot-col-title">BUILD</div>
         <ul class="foot-links">
-          <li><a href="https://api.web4.oasisomniverse.one/swagger" target="_blank">Web4 OASIS API</a></li>
-          <li><a href="https://api.starnet.oasisomniverse.one/swagger" target="_blank">Web5 STARNET API</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-ODK-Runtime-v3.5.0" target="_blank">STAR CLI/ODK</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-API-CLIENT-v1.0.0" target="_blank">STAR API Client</a></li>
-          <li><a href="https://www.nuget.org/profiles/dellams" target="_blank">NuGet (50 pkgs)</a></li>
-          <li><a href="https://oasis-web4.gitbook.io/oasis-web4-docs/" target="_blank">GitBook Docs</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank">GitHub</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/tree/master/Docs/Devs/API%20Documentation" target="_blank">API Reference</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/DEVELOPER_DOCUMENTATION_INDEX.md" target="_blank">Developer Index</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/OASIS_Quick_Start_Guide.md" target="_blank">Quick Start Guide</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/OASIS_ARCHITECTURE_OVERVIEW.md" target="_blank">Architecture Overview</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/DEVELOPMENT_ENVIRONMENT_SETUP.md" target="_blank">Environment Setup</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/OASIS-BEST-PRACTICES.md" target="_blank">Best Practices</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/DOCKER_DEPLOYMENT_GUIDE.md" target="_blank">Docker Deployment Guide</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/OASIS-Runtime-v4.5.1" target="_blank">OASIS Runtime v4.5.1</a></li>
+          <li><a href="https://api.web4.oasisomniverse.one/swagger" target="_blank" rel="noopener">WEB4 API</a></li>
+          <li><a href="https://www.npmjs.com/package/@oasisomniverse/web4-api" target="_blank" rel="noopener">WEB4 npm</a></li>
+          <li><a href="https://api.starnet.oasisomniverse.one/swagger" target="_blank" rel="noopener">WEB5 STARNET API</a></li>
+          <li><a href="https://www.npmjs.com/package/@oasisomniverse/web5-api" target="_blank" rel="noopener">WEB5 npm</a></li>
+          <li><a href="https://api.web6.oasisomniverse.one/swagger" target="_blank" rel="noopener">WEB6 API</a></li>
+          <li><a href="https://www.npmjs.com/package/@oasisomniverse/web6-api" target="_blank" rel="noopener">WEB6 npm</a></li>
+          <li><a href="https://api.web7.oasisomniverse.one/swagger" target="_blank" rel="noopener">WEB7 API</a></li>
+          <li><a href="https://www.npmjs.com/package/@oasisomniverse/web7-api" target="_blank" rel="noopener">WEB7 npm</a></li>
+          <li><a href="https://api.web8.oasisomniverse.one/swagger" target="_blank" rel="noopener">WEB8 API</a></li>
+          <li><a href="https://www.npmjs.com/package/@oasisomniverse/web8-api" target="_blank" rel="noopener">WEB8 npm</a></li>
+          <li><a href="https://api.web9.oasisomniverse.one/swagger" target="_blank" rel="noopener">WEB9 API</a></li>
+          <li><a href="https://www.npmjs.com/package/@oasisomniverse/web9-api" target="_blank" rel="noopener">WEB9 npm</a></li>
+          <li><a href="https://api.web10.oasisomniverse.one/swagger" target="_blank" rel="noopener">WEB10 API</a></li>
+          <li><a href="https://www.npmjs.com/package/@oasisomniverse/web10-api" target="_blank" rel="noopener">WEB10 npm</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.nuget.org/profiles/dellams" target="_blank" rel="noopener">NuGet (50 pkgs)</a></li>
+          <li><a href="https://marketplace.visualstudio.com/items?itemName=NextGenSoftware.oasis-ide" target="_blank" rel="noopener">OASIS IDE</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-ODK-Runtime-v3.5.0" target="_blank" rel="noopener">STAR CLI/ODK</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/STAR-API-CLIENT-v1.0.0" target="_blank" rel="noopener">STAR API Client</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/releases/tag/OASIS-Runtime-v4.5.1" target="_blank" rel="noopener">OASIS Runtime v4.5.1</a></li>
         </ul>
       </div>
       <div>
         <div class="foot-col-title">DOCS</div>
         <ul class="foot-links">
-          <li><a href="https://github.com/NextGenSoftwareUK/OQUAKE/releases/tag/OQUAKE_v1.0.0_ALPHA" target="_blank">Download OQUAKE</a></li>
-          <li><a href="https://oasisomniverse.one#flightmap" target="_blank">Flight Map</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/THE_OASIS_COMPREHENSIVE_WHITEPAPER.md" target="_blank">Whitepaper</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OUR_WORLD_WHITEPAPER.md" target="_blank">Our World Whitepaper</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/INVESTOR_EVALUATION_GUIDE.md" target="_blank">Investor Guide</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/GETTING_STARTED_INDEX.md" target="_blank">Getting Started</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/STAR_CLI_Comprehensive_Guide.md" target="_blank">STAR CLI Guide</a></li>
-          <li><a href="https://www.oasisweb4.com/holonic-architecture" target="_blank">Holonic Architecture</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/WIKI_DOCUMENTATION_INDEX.md" target="_blank">Wiki</a></li>
-          <li><a href="https://www.ourworldthegame.com/blog" target="_blank">Blog</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_Lite_Paper.md" target="_blank">OASIS Lite Paper</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_HYPERDRIVE_WHITEPAPER.md" target="_blank">HyperDrive Whitepaper</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_COSMIC_ORM_WHITEPAPER.md" target="_blank">Cosmic ORM Whitepaper</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_NFT_SYSTEM_WHITEPAPER.md" target="_blank">NFT System Whitepaper</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_UNIVERSAL_WALLET_WHITEPAPER.md" target="_blank">Universal Wallet Whitepaper</a></li>
-          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_TECHNOLOGY_SUMMARY_AND_USE_CASES.md" target="_blank">Use Cases</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OQUAKE/releases/tag/OQUAKE_v1.0.0_ALPHA" target="_blank" rel="noopener">Download OQUAKE</a></li>
+          <li><a href="https://oasis-web4.gitbook.io/oasis-web4-docs/" target="_blank" rel="noopener">GitBook Docs</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/GETTING_STARTED_INDEX.md" target="_blank" rel="noopener">Getting Started</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/OASIS_Quick_Start_Guide.md" target="_blank" rel="noopener">Quick Start</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/tree/master/Docs/Devs/API%20Documentation" target="_blank" rel="noopener">API Reference</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/DEVELOPER_DOCUMENTATION_INDEX.md" target="_blank" rel="noopener">Developer Index</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/OASIS_ARCHITECTURE_OVERVIEW.md" target="_blank" rel="noopener">Architecture Overview</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/DEVELOPMENT_ENVIRONMENT_SETUP.md" target="_blank" rel="noopener">Environment Setup</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/OASIS-BEST-PRACTICES.md" target="_blank" rel="noopener">Best Practices</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/DOCKER_DEPLOYMENT_GUIDE.md" target="_blank" rel="noopener">Docker Guide</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/STAR_CLI_Comprehensive_Guide.md" target="_blank" rel="noopener">STAR CLI Guide</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/Devs/WIKI_DOCUMENTATION_INDEX.md" target="_blank" rel="noopener">Wiki</a></li>
+          <li><a href="https://www.oasisweb4.com/holonic-architecture" target="_blank" rel="noopener">Holonic Architecture</a></li>
+          <li><a href="https://oasisomniverse.one#flightmap" target="_blank" rel="noopener">Flight Map</a></li>
+          <li><a href="https://www.ourworldthegame.com/blog" target="_blank" rel="noopener">Blog</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_TECHNOLOGY_SUMMARY_AND_USE_CASES.md" target="_blank" rel="noopener">Use Cases</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/THE_OASIS_COMPREHENSIVE_WHITEPAPER.md" target="_blank" rel="noopener">Whitepaper</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OUR_WORLD_WHITEPAPER.md" target="_blank" rel="noopener">Our World Whitepaper</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_Lite_Paper.md" target="_blank" rel="noopener">OASIS Lite Paper</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_HYPERDRIVE_WHITEPAPER.md" target="_blank" rel="noopener">HyperDrive</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/OASIS_COSMIC_ORM_WHITEPAPER.md" target="_blank" rel="noopener">Cosmic ORM</a></li>
+          <li><a href="https://github.com/NextGenSoftwareUK/OASIS/blob/master/Docs/INVESTOR_EVALUATION_GUIDE.md" target="_blank" rel="noopener">Investor Guide</a></li>
         </ul>
       </div>
       <div>
